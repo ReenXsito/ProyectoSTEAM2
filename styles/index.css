@@ -5,6 +5,10 @@ body {
     min-height: 100vh;
 }
 
+p, li {
+    text-align: justify;
+}
+
 main {
     flex: 1;
 }
