@@ -50,3 +50,7 @@ main {
 .img-obj {
     max-width: 600px;
 }
+
+.h-80 {
+    min-height: 80vh;
+}
