@@ -3,9 +3,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    --color-primary: #4C81CB;
+    --color-primary-shadow: #1783c2;
 }
 
-p, li {
+p,
+li {
     text-align: justify;
 }
 
@@ -13,12 +16,20 @@ main {
     flex: 1;
 }
 
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    --bs-link-hover-color-rgb: var(--color-primary-shadow);
+}
+
 .navbar {
     background-color: #DBF1D2;
 }
 
 .navbar h1 {
-    color: #4C81CB;
+    color: var(--color-primary);
 }
 
 .navbar-collapse {
@@ -26,9 +37,9 @@ main {
 }
 
 .nav-pills {
-    --bs-nav-pills-link-active-bg: #4C81CB;
-    --bs-nav-link-hover-color: #1783c2;
-    --bs-nav-link-color: #4C81CB;
+    --bs-nav-pills-link-active-bg: var(--color-primary);
+    --bs-nav-link-hover-color: var(--color-primary-shadow);
+    --bs-nav-link-color: var(--color-primary);
 }
 
 .img-index {
@@ -57,4 +68,11 @@ main {
 
 .h-80 {
     min-height: 75vh;
+}
+
+.pagination {
+    --bs-pagination-active-bg: var(--color-primary);
+    --bs-pagination-active-border-color: var(--color-primary);
+    --bs-pagination-color: var(--color-primary);
+    --bs-pagination-hover-color: var(--color-primary-shadow);
 }
